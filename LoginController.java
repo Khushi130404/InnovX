@@ -1,25 +1,4 @@
-package application;
-
 import java.sql.*;
-
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.DialogPane;
-import javafx.scene.control.Hyperlink;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 
 public class LoginController {
 
@@ -63,7 +42,6 @@ public class LoginController {
 		}
 		else
 		{
-//		String username = "Root";
 
 		MyDetailsController mydetailscontroller = new MyDetailsController();
 		mydetailscontroller.setDetails(rs.getString(1), rs.getString(2), rs.getString(3));
