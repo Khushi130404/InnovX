@@ -1,2 +1,2 @@
 # InnovX
-<p>Laptop Purchase<p>
+Laptop Purchase
