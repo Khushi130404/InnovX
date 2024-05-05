@@ -164,7 +164,8 @@ public class Controller implements Initializable {
 				while (rs.next()) {
 					imageUrl1 = rs.getString("Image");
 
-					URL url = new URL(imageUrl1);
+					@SuppressWarnings("deprecation")
+                    URL url = new URL(imageUrl1);
 					URLConnection connection = url.openConnection();
 					InputStream is = connection.getInputStream();
 					Image image = new Image(is);
@@ -197,7 +198,8 @@ public class Controller implements Initializable {
 
 					imageUrl2 = rs2.getString("Image");
 
-					URL url = new URL(imageUrl2);
+					@SuppressWarnings("deprecation")
+                    URL url = new URL(imageUrl2);
 					URLConnection connection = url.openConnection();
 					InputStream is = connection.getInputStream();
 
@@ -305,7 +307,8 @@ public class Controller implements Initializable {
 				while (rs.next()) {
 					imageUrl1 = rs.getString("Image");
 
-					URL url = new URL(imageUrl1);
+					@SuppressWarnings("deprecation")
+                    URL url = new URL(imageUrl1);
 					URLConnection connection = url.openConnection();
 					InputStream is = connection.getInputStream();
 					Image image = new Image(is);
@@ -339,7 +342,8 @@ public class Controller implements Initializable {
 
 					imageUrl2 = rs2.getString("Image");
 
-					URL url = new URL(imageUrl2);
+					@SuppressWarnings("deprecation")
+                    URL url = new URL(imageUrl2);
 					URLConnection connection = url.openConnection();
 					InputStream is = connection.getInputStream();
 
